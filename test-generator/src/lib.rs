@@ -132,7 +132,7 @@ use syn::{parse_macro_input, Expr, ExprLit, Ident, Lit, Token, ItemFn};
 fn canonical_fn_name(s: &str) -> String {
     // remove delimiters and special characters
     s.replace(
-        &['"', ' ', '.', ':', '-', '*', '/', '\\', '\n', '\t', '\r'][..],
+        &['"', ' ', '.', ':', '-', '*', '/', '\\', '\n', '\t', '\r', '+'][..],
         "_",
     )
 }
